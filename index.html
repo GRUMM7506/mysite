@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акбар — Flutter Developer</title>
+    <meta name="description" content="Портфолио Flutter разработчика Акбара. Создаю удобные приложения для людей.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-container"></div>
+    <canvas id="stars-canvas"></canvas>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Акбар</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">О себе</a></li>
+                <li><a href="#skills" class="nav-link">Навыки</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#plans" class="nav-link">Планы</a></li>
+                <li><a href="#education" class="nav-link">Образование</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="hero-background">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="profile-container">
+                <div class="profile-ring"></div>
+                <div class="profile-ring-2"></div>
+                <!-- Замените на свое фото -->
+                <img src="images/profile.jpg" alt="Акбар" class="profile-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27200%27 height=%27200%27%3E%3Cdefs%3E%3ClinearGradient id=%27grad%27 x1=%270%25%27 y1=%270%25%27 x2=%27100%25%27 y2=%27100%25%27%3E%3Cstop offset=%270%25%27 style=%27stop-color:%23667eea%27/%3E%3Cstop offset=%27100%25%27 style=%27stop-color:%23764ba2%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx=%27100%27 cy=%27100%27 r=%2795%27 fill=%27url(%23grad)%27/%3E%3Ctext x=%27100%27 y=%27140%27 font-size=%27100%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27Arial%27%3EA%3C/text%3E%3C/svg%3E'">
+            </div>
+            <div class="typing-container">
+                <h1>
+                    <span class="wave">👋</span>
+                    Привет, я <span class="gradient-text">Акбар</span>
+                </h1>
+            </div>
+            <p class="subtitle">
+                <span class="code-tag">&lt;developer&gt;</span>
+                Flutter Developer | Создаю удобные приложения
+                <span class="code-tag">&lt;/developer&gt;</span>
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Проекта</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Технологий</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Курс МГУ</span>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>Мои проекты</span>
+                    <i class="arrow">→</i>
+                </a>
+                <a href="https://github.com/GRUMM7506" target="_blank" class="btn btn-secondary">
+                    <span>GitHub</span>
+                    <i class="github-icon">⚡</i>
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <span>Прокрути вниз</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Навыки и технологии</h2>
+                <p class="section-subtitle">Инструменты, с которыми я работаю</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="flutter">
+                    <!-- Замените на свои иконки -->
+                    <img src="images/flutter-icon.png" alt="Flutter" class="skill-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <div class="skill-emoji" style="display:none;">📱</div>
+                    <h3>Flutter</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--width: 85%"></div>
+                    </div>
+                    <p>Кроссплатформенная разработка</p>
+                </div>
+                <div class="skill-card" data-skill="dart">
+                    <img src="images/dart-icon.png" alt="Dart" class="skill-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <div class="skill-emoji" style="display:none;">🎯</div>
+                    <h3>Dart</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--width: 80%"></div>
+                    </div>
+                    <p>Основной язык Flutter</p>
+                </div>
+                <div class="skill-card" data-skill="python">
+                    <img src="images/python-icon.png" alt="Python" class="skill-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <div class="skill-emoji" style="display:none;">🐍</div>
+                    <h3>Python</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--width: 75%"></div>
+                    </div>
+                    <p>Backend & Автоматизация</p>
+                </div>
+                <div class="skill-card" data-skill="cpp">
+                    <img src="images/cpp-icon.png" alt="C++" class="skill-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <div class="skill-emoji" style="display:none;">⚡</div>
+                    <h3>C++</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--width: 70%"></div>
+                    </div>
+                    <p>Высокопроизводительные приложения</p>
+                </div>
+                <div class="skill-card" data-skill="builder">
+                    <img src="images/builder-icon.png" alt="C++ Builder" class="skill-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <div class="skill-emoji" style="display:none;">🔨</div>
+                    <h3>C++ Builder</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--width: 65%"></div>
+                    </div>
+                    <p>Desktop приложения</p>
+                </div>
+                <div class="skill-card" data-skill="delphi">
+                    <img src="images/delphi-icon.png" alt="Delphi" class="skill-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <div class="skill-emoji" style="display:none;">💻</div>
+                    <h3>Delphi</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--width: 60%"></div>
+                    </div>
+                    <p>Legacy системы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Избранные проекты</h2>
+                <p class="section-subtitle">То, чем я горжусь</p>
+            </div>
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-number">01</div>
+                    <div class="project-image-wrapper">
+                        <!-- Замените на скриншот приложения -->
+                        <img src="images/marsrutpro.png" alt="МаршрутПро" class="project-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect fill=%27%23667eea%27 width=%27400%27 height=%27300%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-size=%2760%27 text-anchor=%27middle%27 dy=%27.3em%27 fill=%27white%27%3E🗺️%3C/text%3E%3C/svg%3E'">
+                        <div class="project-overlay">
+                            <a href="https://play.google.com/store/apps/details?id=com.akbarov.map_route_app" target="_blank" class="project-link">
+                                <span>Открыть в Play Market</span>
+                                <i>↗</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Maps API</span>
+                            <span class="tag">Android</span>
+                        </div>
+                        <h3>МаршрутПро</h3>
+                        <p>Навигационное приложение для общественного транспорта с интуитивным интерфейсом. Включает построение оптимальных маршрутов, отображение остановок в реальном времени и уведомления о прибытии транспорта.</p>
+                        <ul class="project-features">
+                            <li>Построение маршрутов в реальном времени</li>
+                            <li>Интеграция с картами</li>
+                            <li>Push-уведомления</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-number">02</div>
+                    <div class="project-image-wrapper">
+                        <img src="images/devtools.png" alt="Developer Tools" class="project-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect fill=%27%23764ba2%27 width=%27400%27 height=%27300%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-size=%2760%27 text-anchor=%27middle%27 dy=%27.3em%27 fill=%27white%27%3E🛠️%3C/text%3E%3C/svg%3E'">
+                        <div class="project-overlay">
+                            <div class="project-status">В разработке</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">В разработке</span>
+                            <span class="tag">OSRM</span>
+                            <span class="tag">Maps Editor</span>
+                        </div>
+                        <h3>Developer Tools</h3>
+                        <p>Профессиональный инструмент для настройки и редактирования маршрутов общественного транспорта. Интеграция с OSRM для точного расчета путей и визуальный редактор карт.</p>
+                        <ul class="project-features">
+                            <li>Визуальный редактор маршрутов</li>
+                            <li>Интеграция с OSRM</li>
+                            <li>Экспорт данных</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-number">03</div>
+                    <div class="project-image-wrapper">
+                        <img src="images/sod.png" alt="SOD" class="project-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect fill=%27%2342a5f5%27 width=%27400%27 height=%27300%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-size=%2760%27 text-anchor=%27middle%27 dy=%27.3em%27 fill=%27white%27%3E📦%3C/text%3E%3C/svg%3E'">
+                        <div class="project-overlay">
+                            <div class="project-status">Скоро</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Tracking</span>
+                            <span class="tag">Logistics</span>
+                        </div>
+                        <h3>SOD (Service Of Delivery)</h3>
+                        <p>Инновационный сервис доставки из руки в руки. Отслеживание в реальном времени, прямая связь с курьером и гибкая система оплаты. От двери до двери с максимальным удобством.</p>
+                        <ul class="project-features">
+                            <li>Real-time tracking</li>
+                            <li>Чат с курьером</li>
+                            <li>Гибкие тарифы</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;roadmap&gt;</span>
+                <h2 class="section-title">Планы развития</h2>
+                <p class="section-subtitle">Что в процессе и что впереди</p>
+            </div>
+            <div class="roadmap">
+                <div class="roadmap-item completed">
+                    <div class="roadmap-icon">✅</div>
+                    <div class="roadmap-content">
+                        <h3>Запуск МаршрутПро</h3>
+                        <p>Завершить доработку основных функций: улучшение UI/UX, оптимизация поиска маршрутов, добавление офлайн-режима</p>
+                        <span class="roadmap-status">В процессе</span>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">🚀</div>
+                    <div class="roadmap-content">
+                        <h3>Developer Tools v1.0</h3>
+                        <p>Запустить первую версию инструмента для настройки маршрутов с базовым функционалом редактирования</p>
+                        <span class="roadmap-status">Q1 2025</span>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">🚌</div>
+                    <div class="roadmap-content">
+                        <h3>Расширение транспорта</h3>
+                        <p>Добавить поддержку троллейбусов, автобусов и электричек в МаршрутПро</p>
+                        <span class="roadmap-status">Q2 2025</span>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">📦</div>
+                    <div class="roadmap-content">
+                        <h3>Запуск SOD</h3>
+                        <p>Разработать и запустить Service Of Delivery с полным функционалом доставки</p>
+                        <span class="roadmap-status">Q3 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;education&gt;</span>
+                <h2 class="section-title">Образование</h2>
+                <p class="section-subtitle">Академический путь</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025</div>
+                        <h3>Филиал МГУ в Душанбе</h3>
+                        <h4>Прикладная математика и информатика</h4>
+                        <p>Второй курс. Углубленное изучение алгоритмов, структур данных, математического анализа и программирования. Участие в студенческих проектах и олимпиадах.</p>
+                        <div class="timeline-tags">
+                            <span>Алгоритмы</span>
+                            <span>Математика</span>
+                            <span>Программирование</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Давайте работать вместе</h2>
+                <p class="section-subtitle">Открыт для новых возможностей и интересных проектов</p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:akbarovakbar753@gmail.com" class="contact-card email-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>akbarovakbar753@gmail.com</p>
+                    <span class="contact-arrow">→</span>
+                </a>
+                
+                <a href="https://t.me/GRUMM7506" target="_blank" class="contact-card telegram-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.67-.52.36-.99.53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.48 1.02-.73 3.99-1.73 6.65-2.87 7.98-3.43 3.8-1.58 4.59-1.85 5.1-1.86.11 0 .37.03.53.17.14.11.18.26.2.37.01.06.03.24.01.37z"/>
+                        </svg>
+                    </div>
+                    <h3>Telegram</h3>
+                    <p>@GRUMM7506</p>
+                    <span class="contact-arrow">→</span>
+                </a>
+                
+                <a href="https://github.com/GRUMM7506" target="_blank" class="contact-card github-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                        </svg>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>github.com/GRUMM7506</p>
+                    <span class="contact-arrow">→</span>
+                </a>
+            </div>
+            
+            <div class="contact-cta">
+                <h3>Есть идея для проекта?</h3>
+                <p>Напишите мне, и давайте обсудим, как мы можем воплотить её в жизнь</p>
+                <a href="mailto:akbarovakbar753@gmail.com" class="btn btn-primary btn-large">
+                    <span>Написать письмо</span>
+                    <i>✉️</i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-text">Акбар</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </div>
+                    <p>Создаю приложения, которые решают реальные проблемы</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Навигация</h4>
+                        <a href="#about">О себе</a>
+                        <a href="#skills">Навыки</a>
+                        <a href="#projects">Проекты</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Социальные сети</h4>
+                        <a href="https://github.com/GRUMM7506" target="_blank">GitHub</a>
+                        <a href="https://t.me/GRUMM7506" target="_blank">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Акбар. Создано с <span class="heart">❤️</span> и <span class="code">код</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
