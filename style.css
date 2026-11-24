@@ -772,6 +772,17 @@ img.project-logo[src$="yuz.png"] {
     background: var(--surface);
 }
 
+/* Группа на всю ширину с акцентной рамкой */
+.skills > li.skills-wide {
+    grid-column: 1 / -1;
+    border-color: var(--accent);
+}
+.skills-wide .tags li {
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 600;
+}
+
 .skills h3 {
     margin-bottom: 12px;
     font-size: 1.05rem;
