@@ -171,7 +171,7 @@ document.querySelectorAll('.stop').forEach(section => spy.observe(section));
 // ПОЯВЛЕНИЕ БЛОКОВ ПРИ ПРОКРУТКЕ
 // ========================================
 const revealTargets = document.querySelectorAll(
-    '.stop-head, .project, .skills li, .plan li, .edu, .contacts li, .cta'
+    '.stop-head, .project, .repos li, .skills > li, .plan li, .edu, .contacts li, .cta'
 );
 
 const revealer = new IntersectionObserver(entries => {

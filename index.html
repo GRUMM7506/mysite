@@ -7,7 +7,7 @@
     <meta name="description" content="Портфолио Flutter-разработчика Акбара. Создаю удобные приложения для людей.">
     <meta name="color-scheme" content="dark light">
     <meta property="og:title" content="Акбар — Flutter-разработчик">
-    <meta property="og:description" content="Создаю удобные приложения для людей: МаршрутПро, Developer Tools, SOD.">
+    <meta property="og:description" content="Создаю удобные приложения для людей: МаршрутПро, ДОМастер, YUZ Vision.">
     <meta property="og:type" content="website">
     <link rel="icon" href="images/marsrutpro.png">
     <script>
@@ -58,15 +58,15 @@
             <div class="hero-text">
                 <p class="eyebrow">Flutter-разработчик · Душанбе</p>
                 <h1>Привет, я&nbsp;Акбар.</h1>
-                <p class="lead">Создаю удобные приложения для людей&nbsp;— от&nbsp;навигации по&nbsp;общественному транспорту до&nbsp;сервиса доставки.</p>
+                <p class="lead">Создаю удобные приложения для людей&nbsp;— от&nbsp;навигации по&nbsp;транспорту Душанбе до&nbsp;маркетплейса мастеров.</p>
                 <div class="actions">
                     <a class="btn btn-primary" href="#projects">Мои проекты</a>
                     <a class="btn" href="https://github.com/GRUMM7506" target="_blank" rel="noopener">GitHub ↗</a>
                 </div>
                 <dl class="facts">
-                    <div><dt>проекта</dt><dd>3</dd></div>
-                    <div><dt>технологий</dt><dd>6</dd></div>
-                    <div><dt>курс МГУ</dt><dd>2</dd></div>
+                    <div><dt>приложения в сторах</dt><dd>2</dd></div>
+                    <div><dt>репозиториев на GitHub</dt><dd>27</dd></div>
+                    <div><dt>курс МГУ</dt><dd>3</dd></div>
                 </dl>
             </div>
 
@@ -91,7 +91,7 @@
                         </div>
                         <div class="board-row">
                             <dt>Сейчас</dt>
-                            <dd>Работаю над Developer Tools</dd>
+                            <dd>МаршрутПро и Developer Tools</dd>
                         </div>
                         <div class="board-row" id="timeRow" hidden>
                             <dt>Время</dt>
@@ -124,15 +124,64 @@
                                 <h3>МаршрутПро</h3>
                                 <span class="badge badge-live">В Google Play</span>
                             </div>
-                            <p>Навигационное приложение для общественного транспорта с интуитивным интерфейсом. Включает построение оптимальных маршрутов, отображение остановок в реальном времени и уведомления о прибытии транспорта.</p>
+                            <p>Навигация по общественному транспорту Душанбе. Маршруты строятся на OSRM с собственной матрицей весов по реальным остановкам — потому что большие карты не знают наши маршрутки.</p>
                             <ul class="features">
-                                <li>Построение маршрутов в реальном времени</li>
-                                <li>Интеграция с картами</li>
-                                <li>Push-уведомления</li>
+                                <li>Учитывает реальные пересадки</li>
+                                <li>Офлайн-режим без интернета</li>
+                                <li>Оптимизация по времени, а не по расстоянию</li>
                             </ul>
                             <div class="project-foot">
-                                <ul class="tags"><li>Flutter</li><li>Maps API</li><li>Android</li></ul>
-                                <a class="link" href="https://play.google.com/store/apps/details?id=com.akbarov.map_route_app" target="_blank" rel="noopener">Открыть в Play Market ↗</a>
+                                <ul class="tags"><li>Flutter</li><li>OSRM</li><li>PostGIS</li><li>FastAPI</li></ul>
+                                <div class="links">
+                                    <a class="link" href="https://play.google.com/store/apps/details?id=com.akbarov.map_route_app" target="_blank" rel="noopener">Google Play ↗</a>
+                                    <a class="link" href="https://marshrutpro.web.app" target="_blank" rel="noopener">Веб-версия ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-logo project-mono" aria-hidden="true">Д</div>
+                        <div class="project-body">
+                            <div class="project-top">
+                                <h3>ДОМастер <small>Найди мастера. Или стань им.</small></h3>
+                                <span class="badge badge-live">В App Store и Google Play</span>
+                            </div>
+                            <p>Двусторонний маркетплейс бытовых услуг: клиенты создают заказы, мастера находят работу рядом. Заказы, отклики и переписка — в одном приложении, от первой заявки до завершения.</p>
+                            <ul class="features">
+                                <li>Две роли: клиент и мастер</li>
+                                <li>Чат внутри заказа в реальном времени</li>
+                                <li>Профиль мастера: навыки, радиус выезда и фото работ</li>
+                            </ul>
+                            <div class="project-foot">
+                                <ul class="tags"><li>Flutter</li><li>FastAPI</li><li>PostgreSQL</li><li>WebSocket</li></ul>
+                                <div class="links">
+                                    <a class="link" href="https://domaster.app" target="_blank" rel="noopener">domaster.app ↗</a>
+                                    <a class="link" href="https://apps.apple.com/app/domaster/id6737294928" target="_blank" rel="noopener">App Store ↗</a>
+                                    <a class="link" href="https://play.google.com/store/apps/details?id=com.domaster.app" target="_blank" rel="noopener">Google Play ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <img class="project-logo" src="images/yuz.png" width="180" height="180" alt="" loading="lazy">
+                        <div class="project-body">
+                            <div class="project-top">
+                                <h3>YUZ Vision</h3>
+                                <span class="badge badge-dev">APK · скоро в сторах</span>
+                            </div>
+                            <p>Приложение для компании YUZ — алюминиевые окна, двери и остекление. Сфотографируйте фасад, и через минуту ИИ покажет дом в нескольких стилях с конструкциями YUZ и ориентировочной ценой.</p>
+                            <ul class="features">
+                                <li>Визуализация дома по фотографии</li>
+                                <li>Каталог из 22 типов конструкций с 3D-моделями</li>
+                                <li>Калькулятор с PDF-предложением, работает офлайн</li>
+                            </ul>
+                            <div class="project-foot">
+                                <ul class="tags"><li>ИИ-визуализация</li><li>3D</li><li>5 языков</li></ul>
+                                <div class="links">
+                                    <a class="link" href="https://yuzvision.com" target="_blank" rel="noopener">yuzvision.com ↗</a>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -163,7 +212,7 @@
                                 <h3>SOD <small>Service Of Delivery</small></h3>
                                 <span class="badge badge-soon">Скоро</span>
                             </div>
-                            <p>Инновационный сервис доставки из рук в руки. Отслеживание в реальном времени, прямая связь с курьером и гибкая система оплаты. От двери до двери с максимальным удобством.</p>
+                            <p>Сервис доставки из рук в руки. Отслеживание в реальном времени, прямая связь с курьером и гибкая система оплаты.</p>
                             <ul class="features">
                                 <li>Отслеживание в реальном времени</li>
                                 <li>Чат с курьером</li>
@@ -175,6 +224,67 @@
                         </div>
                     </article>
                 </div>
+
+                <h3 class="subhead">Открытый код на GitHub</h3>
+                <ul class="repos">
+                    <li>
+                        <a href="https://github.com/GRUMM7506/termux-ide" target="_blank" rel="noopener">
+                            <span class="repo-name">termux-ide</span>
+                            <span class="repo-lang">Flutter</span>
+                            <span class="repo-desc">Редактор кода для Android с настоящим терминалом Termux, Git и панелью ИИ-агента.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GRUMM7506/LiteLauncher" target="_blank" rel="noopener">
+                            <span class="repo-name">LiteLauncher</span>
+                            <span class="repo-lang">Kotlin</span>
+                            <span class="repo-desc">Небольшой быстрый лаунчер для Android: плавные жесты, автоматические папки, обои, нарисованные кодом.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GRUMM7506/cargo-uchet" target="_blank" rel="noopener">
+                            <span class="repo-name">cargo-uchet</span>
+                            <span class="repo-lang">Flutter</span>
+                            <span class="repo-desc">Учёт заказов, оплат, долгов и расходов для небольшой мастерской. Отчёты в Excel и PDF.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GRUMM7506/tactical_local_messanger" target="_blank" rel="noopener">
+                            <span class="repo-name">tactical_local_messanger</span>
+                            <span class="repo-lang">Flutter</span>
+                            <span class="repo-desc">P2P-мессенджер для работы без интернета с mesh-пересылкой сообщений.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GRUMM7506/infinite_canvas-flutter" target="_blank" rel="noopener">
+                            <span class="repo-name">infinite_canvas-flutter</span>
+                            <span class="repo-lang">Flutter</span>
+                            <span class="repo-desc">Бесконечная доска в духе Miro: рисование, зум, undo/redo, экспорт в SVG.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GRUMM7506/university-schedule" target="_blank" rel="noopener">
+                            <span class="repo-name">university-schedule</span>
+                            <span class="repo-lang">Flutter · FastAPI</span>
+                            <span class="repo-desc">Система управления учебным процессом: роли, права доступа, JWT, PostgreSQL.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GRUMM7506/Nova-Bot" target="_blank" rel="noopener">
+                            <span class="repo-name">Nova-Bot</span>
+                            <span class="repo-lang">Python</span>
+                            <span class="repo-desc">Telegram-бот с ИИ: локальные модели и облачные провайдеры.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GRUMM7506/ai-photoshop-ultra" target="_blank" rel="noopener">
+                            <span class="repo-name">ai-photoshop-ultra</span>
+                            <span class="repo-lang">Python</span>
+                            <span class="repo-desc">Редактор изображений: запросы на русском превращаются в цепочки команд OpenCV.</span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="more"><a class="link" href="https://github.com/GRUMM7506?tab=repositories" target="_blank" rel="noopener">Все репозитории ↗</a></p>
             </section>
 
             <section class="stop" id="skills">
@@ -185,12 +295,22 @@
                 </header>
 
                 <ul class="skills">
-                    <li><img src="images/flutter-icon.png" width="400" height="300" alt="" loading="lazy"><div><h3>Flutter</h3><p>Кроссплатформенная разработка</p></div></li>
-                    <li><img src="images/dart-icon.png" width="1024" height="1024" alt="" loading="lazy"><div><h3>Dart</h3><p>Основной язык Flutter</p></div></li>
-                    <li><img src="images/python-icon.png" width="1200" height="1200" alt="" loading="lazy"><div><h3>Python</h3><p>Backend и автоматизация</p></div></li>
-                    <li><img src="images/cpp-icon.png" width="1600" height="1600" alt="" loading="lazy"><div><h3>C++</h3><p>Высокопроизводительные приложения</p></div></li>
-                    <li><img src="images/builder-icon.png" width="500" height="500" alt="" loading="lazy"><div><h3>C++ Builder</h3><p>Desktop-приложения</p></div></li>
-                    <li><img src="images/delphi-icon.png" width="500" height="500" alt="" loading="lazy"><div><h3>Delphi</h3><p>Legacy-системы</p></div></li>
+                    <li>
+                        <h3>Мобильная разработка</h3>
+                        <ul class="tags"><li>Flutter</li><li>Dart</li><li>Riverpod</li><li>BLoC</li><li>GetX</li><li>Kotlin</li></ul>
+                    </li>
+                    <li>
+                        <h3>Backend</h3>
+                        <ul class="tags"><li>FastAPI</li><li>Python</li><li>PostgreSQL</li><li>PostGIS</li><li>OSRM</li></ul>
+                    </li>
+                    <li>
+                        <h3>Системы и инструменты</h3>
+                        <ul class="tags"><li>C++</li><li>C++ Builder</li><li>Delphi</li><li>Docker</li><li>Git</li><li>Linux</li></ul>
+                    </li>
+                    <li>
+                        <h3>Дизайн и ИИ</h3>
+                        <ul class="tags"><li>Figma</li><li>Blender</li><li>Stable Diffusion</li><li>ComfyUI</li></ul>
+                    </li>
                 </ul>
             </section>
 
@@ -198,27 +318,37 @@
                 <header class="stop-head">
                     <p class="eyebrow">Остановка 03</p>
                     <h2>Планы развития</h2>
-                    <p class="sub">Что в процессе и что впереди</p>
+                    <p class="sub">Что сделано, что в работе и что впереди</p>
                 </header>
 
                 <ol class="plan">
-                    <li class="is-current">
-                        <span class="when">В процессе</span>
+                    <li class="is-done">
+                        <span class="when">Готово</span>
                         <h3>Запуск МаршрутПро</h3>
-                        <p>Завершить доработку основных функций: улучшение UI/UX, оптимизация поиска маршрутов, добавление офлайн-режима.</p>
+                        <p>Приложение опубликовано в Google Play, есть веб-версия.</p>
                     </li>
-                    <li>
-                        <span class="when">Q1 2025</span>
+                    <li class="is-done">
+                        <span class="when">Готово</span>
+                        <h3>Запуск ДОМастер</h3>
+                        <p>Маркетплейс мастеров доступен в App Store и Google Play.</p>
+                    </li>
+                    <li class="is-current">
+                        <span class="when">В работе</span>
+                        <h3>YUZ Vision в сторах</h3>
+                        <p>APK уже можно скачать с сайта, на очереди Google Play и App Store.</p>
+                    </li>
+                    <li class="is-current">
+                        <span class="when">В работе</span>
                         <h3>Developer Tools v1.0</h3>
-                        <p>Запустить первую версию инструмента для настройки маршрутов с базовым функционалом редактирования.</p>
+                        <p>Первая версия инструмента для настройки маршрутов с базовым функционалом редактирования.</p>
                     </li>
                     <li>
-                        <span class="when">Q2 2025</span>
+                        <span class="when">Далее</span>
                         <h3>Расширение транспорта</h3>
                         <p>Добавить поддержку троллейбусов, автобусов и электричек в МаршрутПро.</p>
                     </li>
                     <li>
-                        <span class="when">Q3 2025</span>
+                        <span class="when">Далее</span>
                         <h3>Запуск SOD</h3>
                         <p>Разработать и запустить Service Of Delivery с полным функционалом доставки.</p>
                     </li>
@@ -233,10 +363,10 @@
                 </header>
 
                 <article class="edu">
-                    <span class="when">2025</span>
+                    <span class="when">3 курс</span>
                     <h3>Филиал МГУ в Душанбе</h3>
                     <p class="edu-major">Прикладная математика и информатика</p>
-                    <p>Второй курс. Углублённое изучение алгоритмов, структур данных, математического анализа и программирования. Участие в студенческих проектах и олимпиадах.</p>
+                    <p>Третий курс. Углублённое изучение алгоритмов, структур данных, математического анализа и программирования. Участие в студенческих проектах и олимпиадах.</p>
                     <ul class="tags"><li>Алгоритмы</li><li>Математика</li><li>Программирование</li></ul>
                 </article>
             </section>
